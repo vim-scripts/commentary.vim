@@ -1,11 +1,9 @@
 This is a mirror of http://www.vim.org/scripts/script.php?script_id=3695
 
-Comment stuff out.  Use \\\ to comment out a line (takes a count), \\ to comment out the target of a motion (for example, \\ap to comment out a paragraph), and \\ in visual mode to comment out the selection.  That's it.
-
-Install repeat.vim, vimscript #2136, to enable repeating with . the line commenting map \\\.
+Comment stuff out.  Use gcc to comment out a line (takes a count), gc to comment out the target of a motion (for example, gcap to comment out a paragraph), and gc in visual mode to comment out the selection.  That's it.
 
 I wrote this because 5 years after Vim added support for mapping an operator, I still couldn't find a commenting plugin that leveraged that feature (I overlooked vimscript #1173).  Striving for minimalism, the first version weighs in at just 35 lines of code.
 
-Oh, and it uncomments, too.
+Oh, and it uncomments, too.  The above maps actually toggle, and `gcu` uncomments a set of adjacent commented lines.  Install repeat.vim, vimscript #2136, to enable repeating with . the line commenting map gcu.  (The other maps are repeatable without it.)
 
 https://github.com/tpope/vim-commentary
